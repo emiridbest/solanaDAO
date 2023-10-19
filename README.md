@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# solanaDAO
-=======
+
 # Watch Demo https://www.awesomescreenshot.com/video/21714335
 
 # RustDAO
