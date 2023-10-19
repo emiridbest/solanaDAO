@@ -14,7 +14,7 @@ export default function VoteHistory({ voteTxHistory }) {
       </Typography>
       <Typography variant="body1">
         Check out your recorded {voteTxHistory.length === 1 ? "vote" : "votes"}{" "}
-        on the Solana blockchain:
+        on our organisation:
       </Typography>
       <List>
         {voteTxHistory.map((txID, i) => (

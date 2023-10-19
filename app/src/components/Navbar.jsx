@@ -18,7 +18,7 @@ export default function Navbar(props) {
     <AppBar position="static" className={classes.root}>
       <Container maxWidth="xl">
         <Toolbar className={classes.toolbar}>
-          <img src="/images/pb-icon.svg" alt="PB Vote" height={40} />
+          <img src="/images/eye.png" alt="AN Vote" height={120} />
           <WalletMultiButton />
         </Toolbar>
       </Container>

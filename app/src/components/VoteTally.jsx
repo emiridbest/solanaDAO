@@ -32,13 +32,13 @@ export default function VoteTally({ votes }) {
 
   function getProgress() {
     if (
-      typeof votes.crunchy !== "number" ||
-      typeof votes.smooth !== "number" ||
-      votes.crunchy + votes.smooth === 0
+      typeof votes.ayes !== "number" ||
+      typeof votes.nays !== "number" ||
+      votes.ayes + votes.nays === 0
     ) {
       return 50;
     }
-    return (votes.crunchy / (votes.smooth + votes.crunchy)) * 100;
+    return (votes.ayes / (votes.nays + votes.ayes)) * 100;
   }
 
   return (
@@ -47,16 +47,16 @@ export default function VoteTally({ votes }) {
         <Box display="flex" alignItems="flex-end">
           <Avatar
             alt=""
-            src="/images/crunchy-icon.svg"
+            src="/images/ayes-icon.svg"
             className={[classes.avatar, "left"].join(" ")}
           />
-          <Typography variant="h6">Team Crunchy</Typography>
+          <Typography variant="h6">Team Ayes</Typography>
         </Box>
         <Box display="flex" alignItems="flex-end" textAlign="right">
-          <Typography variant="h6">Team Smooth</Typography>
+          <Typography variant="h6">Team Nays</Typography>
           <Avatar
             alt=""
-            src="/images/smooth-icon.svg"
+            src="/images/nays-icon.svg"
             className={[classes.avatar, "right"].join(" ")}
           />
         </Box>
@@ -70,16 +70,16 @@ export default function VoteTally({ votes }) {
       <Box display="flex" justifyContent="space-between">
         <Box>
           <Typography variant="h3">
-            {formatWithCommas(votes.crunchy)}
+            {formatWithCommas(votes.ayes)}
           </Typography>
           <Typography variant="h6">
-            {percentize(votes.crunchy / (votes.crunchy + votes.smooth))}
+            {percentize(votes.ayes / (votes.ayes + votes.nays))}
           </Typography>
         </Box>
         <Box textAlign="right">
-          <Typography variant="h3">{formatWithCommas(votes.smooth)}</Typography>
+          <Typography variant="h3">{formatWithCommas(votes.nays)}</Typography>
           <Typography variant="h6">
-            {percentize(votes.smooth / (votes.crunchy + votes.smooth))}
+            {percentize(votes.nays / (votes.ayes + votes.nays))}
           </Typography>
         </Box>
       </Box>

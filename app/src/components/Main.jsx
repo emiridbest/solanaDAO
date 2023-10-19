@@ -23,8 +23,8 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
   const wallet = useWallet();
 
   const [votes, setVotes] = useState({
-    crunchy: null,
-    smooth: null,
+    ayes: null,
+    nays: null,
   });
   const [voteTxHistory, setVoteTxHistory] = useState([]);
 
@@ -37,8 +37,8 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
       try {
         const account = await program.account.votingState.fetch(voteAccount);
         setVotes({
-          crunchy: account.crunchy?.toNumber(),
-          smooth: account.smooth?.toNumber(),
+          ayes: account.ayes?.toNumber(),
+          nays: account.nays?.toNumber(),
         });
       } catch (error) {
         console.log("could not getVotes: ", error);
@@ -70,8 +70,8 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
       });
       const account = await program.account.votingState.fetch(voteAccount);
       setVotes({
-        crunchy: account.crunchy?.toNumber(),
-        smooth: account.smooth?.toNumber(),
+        ayes: account.ayes?.toNumber(),
+        nays: account.nays?.toNumber(),
       });
       enqueueSnackbar("Vote account initialized", { variant: "success" });
     } catch (error) {
@@ -86,13 +86,13 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
     const program = new Program(idl, programID, provider);
     try {
       const tx =
-        side === "crunchy"
-          ? await program.rpc.voteCrunchy({
+        side === "ayes"
+          ? await program.rpc.voteayes({
               accounts: {
                 voteAccount,
               },
             })
-          : await program.rpc.voteSmooth({
+          : await program.rpc.votenays({
               accounts: {
                 voteAccount,
               },
@@ -100,8 +100,8 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
 
       const account = await program.account.votingState.fetch(voteAccount);
       setVotes({
-        crunchy: account.crunchy?.toNumber(),
-        smooth: account.smooth?.toNumber(),
+        ayes: account.ayes?.toNumber(),
+        nays: account.nays?.toNumber(),
       });
       enqueueSnackbar(`Voted for ${capitalize(side)}!`, { variant: "success" });
       setVoteTxHistory((oldVoteTxHistory) => [...oldVoteTxHistory, tx]);
@@ -130,10 +130,10 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
               <VoteTally votes={votes} />
             </Grid>
             <Grid item xs={6}>
-              <VoteOption side="crunchy" handleVote={handleVote} />
+              <VoteOption side="ayes" handleVote={handleVote} />
             </Grid>
             <Grid item xs={6}>
-              <VoteOption side="smooth" handleVote={handleVote} />
+              <VoteOption side="nays" handleVote={handleVote} />
             </Grid>
             <Grid item xs={12}>
               <VoteHistory voteTxHistory={voteTxHistory} />

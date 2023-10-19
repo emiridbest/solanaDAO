@@ -49,9 +49,9 @@ export default function Intro({
         Ready to vote on this proposal?
       </Typography>
       <Typography variant="body1">
-        Cast your vote to the{" "}
-        <Link href="https://solana.com/" underline="always">
-          Solana
+        Cast your vote to our{" "}
+        <Link href="https://doraHacks.io/" underline="always">
+          Organizations most pressing need
         </Link>{" "}
         blockchain and help decide this once and for all!
       </Typography>
@@ -76,8 +76,8 @@ export default function Intro({
           }
         />
       </Box>
-      {(typeof votes.crunchy !== "number" ||
-        typeof votes.crunchy !== "number") &&
+      {(typeof votes.ayes !== "number" ||
+        typeof votes.ayes !== "number") &&
         wallet.connected && (
           <Box marginTop="8px">
             <Typography variant="body1">

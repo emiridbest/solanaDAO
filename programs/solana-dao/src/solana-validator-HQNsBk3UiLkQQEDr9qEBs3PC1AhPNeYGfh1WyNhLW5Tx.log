@@ -1,0 +1,55 @@
+[0m[38;5;8m[[0m2023-10-16T09:51:12.866856952Z [0m[32mINFO [0m solana_validator[0m[38;5;8m][0m solana-validator 1.17.1 (src:c5341007; feat:1091887072, client:SolanaLabs)
+[0m[38;5;8m[[0m2023-10-16T09:51:12.866989456Z [0m[32mINFO [0m solana_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "solana-validator",
+            "-i",
+            "/home/user/web3/Superfluid/solana/solana-dao/target/deploy/solana_dao-keypair.json",
+        ],
+    }
+[0m[38;5;8m[[0m2023-10-16T09:51:12.867083611Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2023-10-16T09:51:12.867136493Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX detected
+[0m[38;5;8m[[0m2023-10-16T09:51:12.867181662Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX2 detected
+[0m[38;5;8m[[0m2023-10-16T09:51:12.868468588Z [0m[33mWARN [0m solana_validator[0m[38;5;8m][0m --vote-account not specified, validator will not vote
+[0m[38;5;8m[[0m2023-10-16T09:51:12.868963855Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m metrics disabled: environment variable not found
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869331831Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config platform="unix/linux/x86_64"
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869424583Z [0m[32mINFO [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.netdev_max_backlog: recommended=0 current=1000
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869459711Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.wmem_default: recommended=134217728 current=212992, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869474915Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   vm.max_map_count: recommended=1000000 current=65530, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869486806Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_max: recommended=134217728 current=212992, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869499186Z [0m[32mINFO [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.optmem_max: recommended=0 current=20480
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869510829Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_default: recommended=134217728 current=212992, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869522982Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.wmem_max: recommended=134217728 current=212992, too small
+OS network limit test failed. See: https://docs.solana.com/running-validator/validator-start#system-tuning
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869426816Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.netdev_max_backlog=1000i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869562972Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.wmem_default=212992i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869574426Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config vm.max_map_count=65530i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869583658Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.rmem_max=212992i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869602355Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.optmem_max=20480i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869651053Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.rmem_default=212992i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869662305Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.wmem_max=212992i
+[0m[38;5;8m[[0m2023-10-16T09:51:12.869670526Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config network_limit_test_failed=1i
+[0m[38;5;8m[[0m2023-10-16T09:51:22.875345562Z [0m[32mINFO [0m solana_validator[0m[38;5;8m][0m solana-validator 1.17.1 (src:c5341007; feat:1091887072, client:SolanaLabs)
+[0m[38;5;8m[[0m2023-10-16T09:51:22.875652534Z [0m[32mINFO [0m solana_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "solana-validator",
+            "-i",
+            "/home/user/web3/Superfluid/solana/solana-dao/target/deploy/solana_dao-keypair.json",
+            "run",
+        ],
+    }
+[0m[38;5;8m[[0m2023-10-16T09:51:22.875712708Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2023-10-16T09:51:22.875725586Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX detected
+[0m[38;5;8m[[0m2023-10-16T09:51:22.875733610Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX2 detected
+[0m[38;5;8m[[0m2023-10-16T09:51:22.876481599Z [0m[33mWARN [0m solana_validator[0m[38;5;8m][0m --vote-account not specified, validator will not vote
+[0m[38;5;8m[[0m2023-10-16T09:51:22.876719991Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m metrics disabled: environment variable not found
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877099582Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_default: recommended=134217728 current=212992, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877134736Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   vm.max_map_count: recommended=1000000 current=65530, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877146582Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.wmem_max: recommended=134217728 current=212992, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877155750Z [0m[32mINFO [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.optmem_max: recommended=0 current=20480
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877165375Z [0m[32mINFO [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.netdev_max_backlog: recommended=0 current=1000
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877174870Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_max: recommended=134217728 current=212992, too small
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877184248Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.wmem_default: recommended=134217728 current=212992, too small
+OS network limit test failed. See: https://docs.solana.com/running-validator/validator-start#system-tuning
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877118566Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config platform="unix/linux/x86_64"
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877373628Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.rmem_default=212992i
+[0m[38;5;8m[[0m2023-10-16T09:51:22.877452537Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config vm.max_map_count=65530i

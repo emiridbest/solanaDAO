@@ -34,15 +34,14 @@ export default function Footer({ programID, voteAccount }) {
       <Container maxWidth="xl">
         <Toolbar className={classes.toolbar}>
           <Typography variant="caption">
-            Made by{" "}
+            {" "}
             <Link underline="always" href="https://brianfriel.xyz">
               Thanks @ Brian Friel
             </Link>
             {" | "}
             Powered by{" "}
             <Link underline="always" href="https://solana.com/">
-              Solana
-            </Link>
+Rust            </Link>
             {" | "}
             <Link
               underline="always"
