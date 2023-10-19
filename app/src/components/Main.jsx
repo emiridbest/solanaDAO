@@ -87,12 +87,12 @@ export default function Main({ voteAccount, voteAccountBump, network }) {
     try {
       const tx =
         side === "ayes"
-          ? await program.rpc.voteayes({
+          ? await program.rpc.voteAyes({
               accounts: {
                 voteAccount,
               },
             })
-          : await program.rpc.votenays({
+          : await program.rpc.voteNays({
               accounts: {
                 voteAccount,
               },

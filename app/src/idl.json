@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "crunchy_vs_smooth",
+  "name": "ayes_vs_nays",
   "instructions": [
     {
       "name": "initialize",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "name": "voteCrunchy",
+      "name": "voteAyes",
       "accounts": [
         {
           "name": "voteAccount",
@@ -40,7 +40,7 @@
       "args": []
     },
     {
-      "name": "voteSmooth",
+      "name": "voteNays",
       "accounts": [
         {
           "name": "voteAccount",
@@ -58,11 +58,11 @@
         "kind": "struct",
         "fields": [
           {
-            "name": "crunchy",
+            "name": "ayes",
             "type": "u64"
           },
           {
-            "name": "smooth",
+            "name": "nays",
             "type": "u64"
           },
           {

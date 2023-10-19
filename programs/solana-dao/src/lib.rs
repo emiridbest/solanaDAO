@@ -6,6 +6,7 @@ declare_id!("HQNsBk3UiLkQQEDr9qEBs3PC1AhPNeYGfh1WyNhLW5Tx");
 #[program]
 pub mod ayes_vs_nays {
 	use super::*;
+	use solana_program::entrypoint::ProgramResult;
 	/// The first parameter for every RPC handler is the Context struct. We define Initialize and Vote below at #[derive(Accounts)]
 	pub fn initialize(ctx: Context<Initialize>) -> ProgramResult {
     	let vote_account = &mut ctx.accounts.vote_account;
