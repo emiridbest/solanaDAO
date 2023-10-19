@@ -1,4 +1,4 @@
-# Watche Demo https://www.awesomescreenshot.com/video/21714335
+# Watch Demo https://www.awesomescreenshot.com/video/21714335
 
 # RustDAO
 RustDAO is a groundbreaking decentralized autonomous organization (DAO) platform built on the high-performance  blockchain using Anchor and Solana CLI. With Rust, you can create and manage decentralized communities, making governance transparent, secure, and efficient. Our platform empowers token holders to propose, vote on, and execute decisions collectively, without intermediaries.
